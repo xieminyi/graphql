@@ -1,5 +1,33 @@
 # README
 
+## Methods
+	
+	query{
+		getProduct (id){
+			id
+			name
+			price
+			description
+			imageUrl
+		} 
+	}
+
+	mutation{
+		createProduct(input{
+				name
+				price
+				description
+				imageUrl
+			})
+		updateProduct(id,input{
+				name
+				price
+				description
+				imageUrl
+			})
+		deleteProduct(id)
+	}
+
 ## Testing steps
 
   a) Update config.js for local mysql database
